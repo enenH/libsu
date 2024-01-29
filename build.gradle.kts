@@ -56,7 +56,7 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             artifact(javadocJar.get())
-            groupId = "com.github.topjohnwu"
+            groupId = "com.github.enenH"
             artifactId = "docs"
         }
     }
@@ -117,7 +117,7 @@ subprojects {
                         afterEvaluate {
                             from(components["release"])
                         }
-                        groupId = "com.github.topjohnwu.libsu"
+                        groupId = "com.github.enenH.libsu"
                         artifactId = project.name
                     }
                 }
