@@ -28,6 +28,7 @@ val dlPackageList by tasks.registering {
         File(rootProject.buildDir, "package-list").outputStream().use {
             it.writer().write(packageList)
             it.write("\n".toByteArray())
+
         }
     }
 }
